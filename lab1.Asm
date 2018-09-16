@@ -3,7 +3,7 @@
 option casemap :none  ;case sensitive
 
 include lab1.inc
-include RADbg.inc
+
 .code
 Begin:
 	call main
@@ -66,10 +66,8 @@ not_letter:
 	inc edx
 next_iteration:
 	loop big_small
-	mov smalls,esi
-	mov bigs,eax
-	mov not_letters,edx
-	
+	invoke wsprintf, addr buffer, addr string, edx, esi, eax
+	invoke MessageBox,0,addr buffer, addr hello_title, MB_OK
 	ret
 
 main endp
