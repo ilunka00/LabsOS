@@ -13,3 +13,6 @@ includelib kernel32.lib
 	hello_title	db	' Лабораторна робота № 1 ',0
 	comp_name_len	db	0
 	immediate_operand_not_allowed	dw	3
+	smalls	db	0
+	bigs	db	0
+	not_letters	db	0
