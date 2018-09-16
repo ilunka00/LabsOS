@@ -11,3 +11,5 @@ includelib kernel32.lib
 	temp_path	db	200	Dup(0)
 	arr_size	dd	200
 	hello_title	db	' Лабораторна робота № 1 ',0
+	comp_name_len	db	0
+	immediate_operand_not_allowed	dw	3
